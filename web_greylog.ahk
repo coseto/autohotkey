@@ -14,5 +14,5 @@ element.SendKeys(driver.Keys.Control, "v")	;組合鍵ctrl+c
 Xpath3 = //html/body/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div[6]/div[3]/div/div/table/tbody/tr/td[6]
 driver.findElementByXPath(Xpath3).click()
 Xpath4 = //html/body/div/div/div[2]/div[2]/div[2]/div/div/div[2]/div[6]/div[3]/div/div/table/tbody/tr[3]/td/div/div[2]/div[2]/div/dl/span[2]/dd/div[2]
-xpath5 := driver.findElementByXPath(Xpath4).text
-MsgBox, %xpath5%
+xpath5 := driver.findElementByXPath(Xpath4).text ;get text with xpath4 element text
+MsgBox, %xpath5% ;print last step text
