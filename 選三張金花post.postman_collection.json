@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "a880a6e0-a284-4887-800e-f954be0ffbec",
+		"name": "選三張金花post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "玩家全輸，閒家都同花順",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"all\": {\r\n\"1\": {\r\n\"1\": [12,25,38,51,47],\r\n\"2\": [1,14,27,40,11],\r\n\"3\": [2,15,28,41,12],\r\n\"4\": [3,16,29,42,13],\r\n\"5\": [4,17,30,43,14]}},\r\n\"banker\" : \"1\",\r\n\"bankerRate\" : \"100\",\r\n\"players\": \"5\"}"
+				},
+				"url": {
+					"raw": "http://192.168.50.15:8080/goral/api/mock/cards/mode/poker",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"50",
+						"15"
+					],
+					"port": "8080",
+					"path": [
+						"goral",
+						"api",
+						"mock",
+						"cards",
+						"mode",
+						"poker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "玩家全贏 (豹子)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"all\": {\r\n\"1\": {\r\n\"1\": [0,1,15,46,47],\r\n\"2\": [1,14,27,40,11],\r\n\"3\": [2,15,28,41,12],\r\n\"4\": [3,16,29,42,13],\r\n\"5\": [4,17,30,43,14]}},\r\n\r\n\"banker\" : \"1\",\r\n\"bankerRate\" : \"100\",\r\n\"players\": \"5\"}"
+				},
+				"url": {
+					"raw": "http://192.168.50.15:8080/goral/api/mock/cards/mode/poker",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"50",
+						"15"
+					],
+					"port": "8080",
+					"path": [
+						"goral",
+						"api",
+						"mock",
+						"cards",
+						"mode",
+						"poker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "玩家全輸，閒家都豹子",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"all\": {\r\n\"1\": {\r\n\"1\": [0,1,15,46,47],\r\n\"2\": [1,14,27,40,11],\r\n\"3\": [2,15,28,41,12],\r\n\"4\": [3,16,29,42,13],\r\n\"5\": [4,17,30,43,14]}},\r\n\r\n\"banker\" : \"1\",\r\n\"bankerRate\" : \"100\",\r\n\"players\": \"5\"}"
+				},
+				"url": {
+					"raw": "http://192.168.50.15:8080/goral/api/mock/cards/mode/poker",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"50",
+						"15"
+					],
+					"port": "8080",
+					"path": [
+						"goral",
+						"api",
+						"mock",
+						"cards",
+						"mode",
+						"poker"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
